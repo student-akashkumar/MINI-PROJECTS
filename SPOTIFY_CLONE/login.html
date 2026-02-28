@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signup & Login Page</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      min-height:100vh;
+      background:linear-gradient(120deg,#667eea,#764ba2);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+    }
+
+    .container{
+      width:380px;
+      position:relative;
+    }
+
+    .card{
+      background:rgba(255,255,255,0.15);
+      backdrop-filter:blur(15px);
+      border-radius:20px;
+      padding:40px 30px;
+      box-shadow:0 25px 45px rgba(0,0,0,0.2);
+      color:#fff;
+      animation:fadeIn 1s ease forwards;
+    }
+
+    @keyframes fadeIn{
+      from{opacity:0;transform:translateY(30px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+
+    h2{
+      text-align:center;
+      margin-bottom:25px;
+    }
+
+    .input-group{
+      position:relative;
+      margin-bottom:22px;
+    }
+
+    .input-group input{
+      width:100%;
+      padding:12px 10px;
+      background:transparent;
+      border:none;
+      border-bottom:2px solid rgba(255,255,255,0.4);
+      outline:none;
+      color:#fff;
+      font-size:15px;
+    }
+
+    .input-group label{
+      position:absolute;
+      left:10px;
+      top:50%;
+      transform:translateY(-50%);
+      font-size:14px;
+      color:rgba(255,255,255,0.7);
+      pointer-events:none;
+      transition:.3s;
+    }
+
+    .input-group input:focus + label,
+    .input-group input:valid + label{
+      top:-8px;
+      font-size:12px;
+      color:#fff;
+    }
+
+    .btn{
+      width:100%;
+      padding:12px;
+      border:none;
+      border-radius:30px;
+      background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+      font-size:16px;
+      cursor:pointer;
+      transition:.3s;
+    }
+
+    .btn:hover{
+      transform:translateY(-3px);
+      box-shadow:0 10px 20px rgba(0,0,0,.3);
+    }
+
+    .switch{
+      margin-top:18px;
+      text-align:center;
+      font-size:14px;
+      cursor:pointer;
+    }
+
+    .switch span{
+      color:#ffd1dc;
+    }
+
+    .hidden{display:none}
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- SIGNUP CARD -->
+    <div class="card" id="signupCard">
+      <h2>Create Account</h2>
+
+      <div class="input-group">
+        <input type="text" id="signupName" required>
+        <label>Full Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email" id="signupEmail" required>
+        <label>Email</label>
+      </div>
+
+      <div class="input-group">
+        <input type="password" id="signupPassword" required>
+        <label>Password</label>
+      </div>
+
+      <button class="btn" id="signupBtn">Sign Up</button>
+
+      <div class="switch" id="goLogin">Already have an account? <span>Login</span></div>
+    </div>
+
+    <!-- LOGIN CARD -->
+    <div class="card hidden" id="loginCard">
+      <h2>Login</h2>
+
+      <div class="input-group">
+        <input type="email" id="loginEmail" required>
+        <label>Email</label>
+      </div>
+
+      <div class="input-group">
+        <input type="password" id="loginPassword" required>
+        <label>Password</label>
+      </div>
+
+      <button class="btn" id="loginBtn">Login</button>
+
+      <div class="switch" id="goSignup">Don't have an account? <span>Sign Up</span></div>
+    </div>
+
+  </div>
+
+<script>
+  const signupCard = document.getElementById('signupCard');
+  const loginCard = document.getElementById('loginCard');
+
+  document.getElementById('goLogin').addEventListener('click', () => {
+    signupCard.classList.add('hidden');
+    loginCard.classList.remove('hidden');
+  });
+
+  document.getElementById('goSignup').addEventListener('click', () => {
+    loginCard.classList.add('hidden');
+    signupCard.classList.remove('hidden');
+  });
+
+  document.getElementById('signupBtn').addEventListener('click', () => {
+    const name = signupName.value;
+    const email = signupEmail.value;
+    const pass = signupPassword.value;
+
+    if(name && email && pass){
+      alert('Signup Successful');
+    }else{
+      alert('Please fill all fields');
+    }
+  });
+
+  document.getElementById('loginBtn').addEventListener('click', () => {
+    const email = loginEmail.value;
+    const pass = loginPassword.value;
+
+    if(email && pass){
+      alert('Login Successful');
+    }else{
+      alert('Please enter email & password');
+    }
+  });
+</script>
+
+</body>
+</html>
