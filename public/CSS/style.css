@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(14, 6, 14);
+    color: #fff;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.navbar {
+    min-height: 10vh;
+    width: 100%;
+    background-color: rgb(1, 1, 34);
+    padding: 0.3rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    border-bottom-style:dotted;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.ham {
+    font-size: 35px;
+    border: 1px solid gray;
+    padding: 0 8px 3px 8px;
+    border-radius: 8px;
+}
+
+input {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 10px 30px rgba(125, 12, 12, 0.4);
+    background-color: rgb(242, 214, 142);
+    color: #fff;
+}
+
+input:hover {
+    border: 2px solid #0a0000;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0 0 0 0.4);
+    background-color: gold;
+    font-weight: 600;
+}
+
+button:hover {
+    border: 2px solid #0a0000;
+    cursor: pointer;
+    background-color: goldenrod;
+}
+
+.navbar ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.navbar li {
+    list-style: none;
+    color: gold;
+    cursor: pointer;
+}
+
+.footer {
+    min-height: 10vh;
+    width: 100%;
+    background-color: rgb(46, 36, 50);
+    padding: 0 1rem;
+    border-top: 1px solid #fff;
+    border-top-style: dotted;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 12px;
+}
+
+/* ********************** About *********************** */
+.about-h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    transform: translateY(-200px);
+    transition: all 1s;
+    animation: slideDown 1s ease .2s forwards;
+}
+
+.about-h1 span {
+    color: gold;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 80vh;
+}
+.form-2{
+    width: 400px;
+    height: 500px;
+    border: 2px solid gold;
+    border-radius: 10px;
+    box-shadow: inset 0px 1px 20px 0px #fff;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+
