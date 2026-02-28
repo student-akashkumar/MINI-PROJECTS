@@ -1,0 +1,37 @@
+<!-- ==================== HEADER ==================== -->
+
+<h1 align="center">⚡ Mini Project - Next Gen UI</h1>
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?color=00F7FF&size=28&center=true&vCenter=true&width=600&lines=Modern+Frontend+Mini+Project;Responsive+%26+Interactive+Design;Built+With+Clean+Code+%F0%9F%92%BB" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/github/stars/your-username/your-repo?style=for-the-badge" />
+  <img src="https://img.shields.io/github/forks/your-username/your-repo?style=for-the-badge" />
+  <img src="https://img.shields.io/github/license/your-username/your-repo?style=for-the-badge" />
+</p>
+
+---
+
+## 🌟 Overview
+
+This is a **modern & upgraded mini project** built with clean architecture and responsive design.  
+Designed with performance, simplicity, and scalability in mind.
+
+> ✨ Clean UI  
+> 🚀 Fast Performance  
+> 📱 Fully Responsive  
+> 💡 Beginner Friendly Code Structure  
+
+---
+
+## 🛠️ Tech Stack
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,js,react,bootstrap,tailwind,nodejs,express,mongodb" />
+</p>
+
+---
+
+## 📂 Project Structure
