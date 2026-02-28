@@ -1,2 +1,0 @@
-# Frikly Navigation
-okey
