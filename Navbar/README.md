@@ -1,1 +1,1 @@
-# MINI-PROJECTS
+![Navbar Logo](nav.png)
