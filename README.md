@@ -2,6 +2,7 @@ update:71
 
 <!-- ==================== HEADER ==================== -->
 update:81
+update:82
 
 <h1 align="center">⚡ Mini Project - For practice</h1>
 
